@@ -27,16 +27,31 @@
 
   <div class="input-group mb-3">
     <input  id="taskNameInput" type="text" class="form-control" placeholder="Add a new task">
-    <button id="addTaskBtn" class="btn btn-success"><i class="fa fa-check"></i></button>
+    <button id="addTaskBtn" class="btn btn-success"><i class="fa fa-plus"></i></button>
     <button id="updateTaskBtn" class="btn btn-warning d-none"><i class="fa fa-edit"></i></button>
   </div>
-
+  <hr>
   <!-- Task Items -->
    <div id="tasksContainer">
   
 </div>
-  
+<hr>
+<div class="row mt-3 g-2 text-center text-md-start">
+  <div class="col-12 col-md d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+    <div class="btn btn-info"><i class="fa-solid fa-tasks"></i> All <span id="allNum"></span></div>
+    <div class="btn btn-warning"><i class="fa-solid fa-clock"></i> Pending <span id="penddingNum"></span></div>
+    <div class="btn btn-success"><i class="fa fa-check-circle"></i> Completed <span id="completedNum"></span></div>
+  </div>
+  <div class="col-12 col-md-auto d-flex justify-content-center justify-content-md-end">
+    <button id="deleteAllBtn" class="btn btn-danger w-100 w-md-auto">
+      <i class="fa fa-trash"></i> Delete All
+    </button>
+  </div>
 </div>
+
+</div>
+
+
 
 <script src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,14 +1,19 @@
 body {
-    background-color: #f5f7fa;
+    background-color: #c0d4f3;
     font-family: 'Segoe UI', sans-serif;
   }
   .todo-container {
-    max-width: 600px;
+    max-width: 50%;
     margin: 50px auto;
-    background: #fff;
+    background: #ffffff79;
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  }
+  @media (max-width: 768px) {
+    .todo-container {
+      max-width: 90%;
+    }
   }
   .todo-header {
     display: flex;
