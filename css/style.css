@@ -1,0 +1,103 @@
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .todo-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  }
+  .todo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #addTaskBtn {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .todo-input {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  .task-item {
+    background-color: #f0f4f8;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .task-actions button {
+    margin-left: 5px;
+  }
+  .filter-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .form-control, .btn {
+    border-radius: 10px;
+  }
+
+  .completed {
+    background-color: rgba(41, 128, 41, 0.743);
+    opacity: 0.6;
+    span {
+        text-decoration: line-through;
+        color: #333;
+    }
+  }
+
+  .custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .custom-checkbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkmark i {
+    color: white;
+    font-size: 14px;
+    display: none;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: #198754; 
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark i {
+    display: block;
+  }
+  
+  .form-select:focus,
+  input:focus,
+  input {
+    box-shadow: none !important;
+  }

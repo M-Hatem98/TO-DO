@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="todo-container">
+  <div class="todo-header text-center">
+    <h1 class="mb-0">My Tasks</h1>
+  </div>
+
+  <div class="filter-inputs">
+    <input  id="searchTaskInput" type="text" class="form-control" placeholder="Search tasks...">
+    <select id="filterTaskInput" class="form-select">
+      <option value="all">All</option>
+      <option value="completed">Completed</option>
+      <option value="pending">Pending</option>
+    </select>
+  </div>
+
+  <div class="input-group mb-3">
+    <input  id="taskNameInput" type="text" class="form-control" placeholder="Add a new task">
+    <button id="addTaskBtn" class="btn btn-success"><i class="fa fa-check"></i></button>
+    <button id="updateTaskBtn" class="btn btn-warning d-none"><i class="fa fa-edit"></i></button>
+  </div>
+
+  <!-- Task Items -->
+   <div id="tasksContainer">
+  
+</div>
+  
+</div>
+
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
